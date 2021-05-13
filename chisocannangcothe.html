@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let can_nang = prompt("nhập cân nặng của bạn: ");
+    let chieu_cao = prompt("nhập chiều cao của bạn: ");
+    can_nang = parseFloat(can_nang);
+    chieu_cao = parseFloat(chieu_cao);
+    let chi_so;
+    chi_so = can_nang / (chieu_cao ^ 2);
+
+    if (chi_so > 30) {
+        alert('obese');
+    } else if ((chi_so < 30) && (chi_so > 25)) {
+        alert('overweight');
+    } else if ((chi_so < 25) && (chi_so > 18.5)) {
+        alert('normal');
+    } else {
+        alert('underweight');
+    }
+</script>
+</body>
+</html>
